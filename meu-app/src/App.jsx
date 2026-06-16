@@ -1,15 +1,15 @@
 import './App.css'
 import { Routes, Route, Link, NavLink } from 'react-router-dom'
 
-function Home() {
+function Menu() {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Menu</h1>
 
-      <p>Bem-vindo ao meu portfólio.</p>
+      <p>Olá esse é o meu portifólio.</p>
 
       <Link to="/sobre">
-        <button>Ir para Sobre</button>
+        <button>go to Sobre</button>
       </Link>
     </div>
   )
@@ -20,10 +20,10 @@ function Sobre() {
     <div>
       <h1>Sobre</h1>
 
-      <p>Meu nome é Olavo e sou estudante.</p>
+      <p>Eu sou o Renzo, estudante do ifrj.</p>
 
       <Link to="/projetos">
-        <button>Ir para Projetos</button>
+        <button>go to Projetos</button>
       </Link>
     </div>
   )
@@ -35,13 +35,13 @@ function Projetos() {
       <h1>Projetos</h1>
 
       <ul>
-        <li>Site em HTML e CSS sobre minecraft</li>
-        <li>drone em hardware</li>
-        <li>jogo em processo no godot</li>
+        <li>garra em hardware</li>
+        <li>jogo projeto final hero legacy em godot</li>
+        <li>site em html do milamB</li>
       </ul>
 
       <Link to="/">
-        <button>Voltar para Home</button>
+        <button>back to Home</button>
       </Link>
     </div>
   )
@@ -84,7 +84,7 @@ function App() {
       <hr />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Menu />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/projetos" element={<Projetos />} />
       </Routes>
